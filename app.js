@@ -1,13 +1,11 @@
+require('./xyz.js') // call one module in to another
+const obj = require('./sum.js');
+
 var name = "Namaste NodeJS";
 
 var a = 10;
 var b = 20;
 
-// console.log(name);
-// console.log(a + b); 
+obj.calculateSum(a,b)
 
-// console.log(global);
-console.log(this);  //Empty Object
-
-console.log(globalThis);
-console.log(globalThis === global);
+console.log(obj.x);
